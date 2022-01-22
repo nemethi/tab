@@ -829,6 +829,12 @@ const commands = {
     const url = 'https://developer.mozilla.org', search = '/search?q=';
     if (args.length ==0) redirect(url)
     else redirect(buildURL(url, search, args.join(' ')))
+  },
+
+  // OTP Direkt
+  'otp': (args) => {
+	  const url = 'https://www.otpbank.hu/portal/hu/OTPdirekt/Belepes';
+	  redirect(url);
   }
 }
 })() // closure
